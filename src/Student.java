@@ -53,6 +53,24 @@ public class Student {
                         System.out.println(stu.college);
                     }
                     break;
+                case 3:
+                    System.out.println("Enter the student admission number");
+                    Scanner obj1 = new Scanner(System.in);
+                    String adm = obj1.next();
+                    for (stud e1 : arr) {
+                        if (e1.admissionnumber.equals(adm)) {
+                            System.out.println("Details of student with admission number " + adm + "is ");
+                            System.out.println(e1.name);
+                            System.out.println(e1.rollnumber);
+                            System.out.println(e1.admissionnumber);
+                            System.out.println(e1.college);
+                            break;
+                        } else {
+                            System.out.println("No such student found");
+                        }
+                    }
+                    break;
+
 
 
 
