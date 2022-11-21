@@ -43,6 +43,17 @@ public class Student {
                     stud s = new stud(name, roll, Admissionnumber, CollegeName);
                     arr.add(s);
                     break;
+                case 2:
+                    System.out.println("List Student Details ");
+                    for (stud stu : arr) {
+                        System.out.println("Printing details of student ");
+                        System.out.println(stu.name);
+                        System.out.println(stu.rollnumber);
+                        System.out.println(stu.admissionnumber);
+                        System.out.println(stu.college);
+                    }
+                    break;
+
 
 
 
