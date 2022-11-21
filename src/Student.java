@@ -70,17 +70,21 @@ public class Student {
                         }
                     }
                     break;
+                case 4:
 
-
-
-
-
-
+                    System.out.println("Enter the admission number");
+                    Scanner obj2 = new Scanner(System.in);
+                    String adm2 = obj2.next();
+                    for (stud e1 : arr) {
+                        if (e1.admissionnumber.equals(adm2)) {
+                            arr.remove(e1);
+                        }
+                    }
+                    break;
             }
         }
     }
 }
-
 
 
 
